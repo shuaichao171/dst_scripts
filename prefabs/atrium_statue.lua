@@ -24,7 +24,6 @@ SetSharedLootTable("atrium_statue_loot",
 })
 
 local function OnWorked(inst, worker, workleft)
-	print(inst, worker, workleft)
     inst.AnimState:PlayAnimation(
         (   (workleft < TUNING.MARBLEPILLAR_MINE / 3 and ("idle_low"..inst._suffix)) or
             (workleft < TUNING.MARBLEPILLAR_MINE * 2 / 3 and ("idle_med"..inst._suffix)) or
